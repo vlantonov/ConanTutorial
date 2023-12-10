@@ -9,3 +9,8 @@
 3. Build
 * `cmake --build --preset conan-release` if using CMake>=3.23
 * `make` in `build` folder using CMake<3.23
+
+## Alternative build
+* `conan install . -s "&:build_type=Debug"`
+* `cd build`
+* `cmake .. -G "Unix Makefiles" -DCMAKE_TOOLCHAIN_FILE=./Debug/generators/conan_toolchain.cmake -DCMAKE_POLICY_DEFAULT_CMP0091=NEW -DCMAKE_BUILD_TYPE=Debug`
