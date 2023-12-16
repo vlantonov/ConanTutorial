@@ -28,6 +28,7 @@
 * `conan create .`
 * Note: Convertor `conanfile.txt` to `conanfile.py`: [Migration commands](https://github.com/conan-io/conan-extensions/tree/main/extensions/commands/migrate)
 * `cmake --install --prefix /usr/bin`
+* Upload package `conan upload "app/* -c"`
 
 ## Alternative build
 * `conan install . --build=missing`
@@ -42,3 +43,4 @@
 ## References
 * [Migration commands](https://github.com/conan-io/conan-extensions/tree/main/extensions/commands/migrate)
 * [Developing packages locally](https://docs.conan.io/2.0/tutorial/developing_packages.html)
+* [conan upload](https://docs.conan.io/1/reference/commands/creator/upload.html)
